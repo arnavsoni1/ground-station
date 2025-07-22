@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ground Station</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Ground Station</h1>
+  </header>
+
+  <main>
+    <section class="telemetry">
+      <div class="quantity">Altitude: <span>--</span> m</div>
+      <div class="quantity">Velocity: <span>--</span> m/s</div>
+      <div class="quantity">Temperature: <span>--</span> °C</div>
+      <div class="quantity">Pressure: <span>--</span> Pa</div>
+      <div class="quantity">
+        Acceleration: 
+        X: <span>--</span>, 
+        Y: <span>--</span>, 
+        Z: <span>--</span>
+      </div>
+      <div class="quantity">
+        Gyroscopic angles: 
+        X: <span>--</span>, 
+        Y: <span>--</span>, 
+        Z: <span>--</span>
+      </div>
+    </section>
+
+    <section class="graphs">
+      <div class="graph-card">
+        <h2>Altitude</h2>
+        <canvas id="graph1"></canvas>
+      </div>
+      <div class="graph-card">
+        <h2>Temperature</h2>
+        <canvas id="graph2"></canvas>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
